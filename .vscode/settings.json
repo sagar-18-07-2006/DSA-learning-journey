@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.txt": "chatmode",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}

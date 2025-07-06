@@ -6,3 +6,4 @@ Return the max element in the vector
 
 *min_element (vec.begin(), vec. end()) 
 Return the min element of the vector
+list.empty() checks if the list is empty. Returns '1' if empty and '0' if not.

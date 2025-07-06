@@ -1,0 +1,8 @@
+vector<int> val;
+val.insert(iteratbefore that iteratoror,value);//will add value in val brfore iteratorpointing
+val.inset(iterator,numberof repeats you want ,value) //no of repeats time your value will insert 
+*max_element(vec.begin(), vec. end()) 
+Return the max element in the vector
+
+*min_element (vec.begin(), vec. end()) 
+Return the min element of the vector

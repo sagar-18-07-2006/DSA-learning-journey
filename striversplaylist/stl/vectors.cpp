@@ -14,5 +14,8 @@ int main(){
     for (int i:val){
         cout<<i<<endl;
     }
-    
+    vector<int> vec1(4) ;//4 elements veector
+    vector<int> vec2(vec1);// 4 element vector copy of vec1
+    vector<int> vec3(6,3);// it has 6 elements having vlue 3    
+    cout<<vec3.size();
 }

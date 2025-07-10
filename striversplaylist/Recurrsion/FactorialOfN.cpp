@@ -15,10 +15,10 @@ int factorial(int n)
     }
 }
 
-int main (){
-    int n;
-    cout<<"Enter the number: ";
-    cin >> n;
-    cout<<"The factorial of "<<n<<" is "<<factorial(n);
+int main (){//did it in a diffrent way 
+    int n;//did it in a diffrent way 
+    cout<<"Enter the number: ";//did it in a diffrent way 
+    cin >> n;//did it in a diffrent way 
+    cout<<"The factorial of "<<n<<" is "<<factorial(n);//did it in a diffrent way 
     return 0;
 }

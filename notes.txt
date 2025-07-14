@@ -53,3 +53,4 @@ Time complexity of map storing and fetching take O(log(n))
 Time complexity of unoreder_map storing and fetching take (1)best and average but worst is O(n)
 
 TLE exceed then goit to map 
+selection sort Time Complexity is O(n**2)

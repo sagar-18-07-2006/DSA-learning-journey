@@ -1,5 +1,6 @@
 #include<iostream>
 #include<map>
+#include<unordered_map>
 using namespace std;
 int main(){
     int n;
@@ -11,7 +12,7 @@ int main(){
        cout<<"Enter "<<i+1<<"th Element ";
        cin>>arr[i];
     }
-    map<int,int>hash;
+  unordered_map<int,int>hash;
      for(int i=0;i<n;i++){
        hash[arr[i]]++;
      }    
@@ -22,7 +23,7 @@ int main(){
     {   int j;
         cout<<"Enter The Querry: ";
         cin>>j;
-        if(i in hash)
+        // if(i in hash)
     }
     
     

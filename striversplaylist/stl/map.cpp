@@ -11,6 +11,6 @@ int main()
     student_marks.insert({{"hardik",50},{"aditya s",40}});
     map<string,int> :: iterator iter;
     for(iter =student_marks.begin();iter!=student_marks.end();iter++){
-        cout<<iter->first<<" "<<iter->second<<endl;
+        cout<<iter->first<<" "<<iter->  second<<endl;
     }
 }

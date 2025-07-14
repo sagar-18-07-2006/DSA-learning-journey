@@ -49,3 +49,4 @@ int main()
     }
     
 }
+Time complexity of map dtoring and fetching take log(n);

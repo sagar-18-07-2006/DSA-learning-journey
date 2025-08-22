@@ -13,16 +13,16 @@ int main()
     int arr[] = {1, 3, 4, 1, 8, 74, 9, 3, 97};
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    for (int i = 0; i < n - 1; i++)
+    for (int i = n-1; i >0; i--)
     {
-        int minindex = i;
-        for (int j = i + 1; j < n; j++)
+        int maxindex = i;
+        for (int j = 0; j < i; j++)
         {
-            if (arr[j] < arr[minindex])
-                minindex = j;
+            if (arr[j] > arr[maxindex])
+                maxindex = j;
         }
-        if (minindex != i)
-            swap(arr[i], arr[minindex]);
+        if (maxindex != i)
+            swap(arr[i], arr[maxindex]);
     }
 
         for (int i = 0; i < n; i++){
@@ -32,5 +32,3 @@ int main()
 
     return 0;
 }
-
-

@@ -13,7 +13,7 @@ int main(){
       int n;
     std::cout<<"enter thr number of series you print: ";
 
-   std::  cin>>n;
+   std::  cin>>n;f
     TOH(n,'S','A','D');
 }
 // TOH(N, A, B, C)

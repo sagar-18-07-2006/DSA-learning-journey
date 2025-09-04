@@ -36,7 +36,31 @@ void mergeSort(int arr[], int start, int mid, int end) {
         arr[h] = temp[h - start];
     }
 }
+void mergeInPlace(int arr[], int start, int mid, int end) {
+    int i = start;
+    int j = mid + 1;
 
+    while (i <= mid && j <= end) {
+        if (arr[i] <= arr[j]) {
+            i++;
+        } else {
+            int value = arr[j];
+            int index = j;
+
+            // Shift all elements between i and j-1 one step right
+            while (index > i) {
+                arr[index] = arr[index - 1];
+                index--;
+            }
+            arr[i] = value;
+
+            // Update all pointers
+            i++;
+            mid++;
+            j++;
+        }
+    }
+}
 // Recursive merge function
 void merge(int arr[], int start, int end) {
     if (start < end) {

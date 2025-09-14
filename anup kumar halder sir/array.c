@@ -36,7 +36,7 @@ void initalise(struct array *arr)
 void display(struct array *arr)
 {
     if (arr->length == 0)
-    {
+    {~
         printf("The array is empty\n");
     }
     else

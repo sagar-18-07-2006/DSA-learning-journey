@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.txt": "chatmode",
+        "stdio.h": "c"
+    }
+}

@@ -8,7 +8,7 @@ struct Node {
 
 struct Node* head = NULL;
 
-// Create new node
+
 struct Node* createNode(int value) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     if (!newNode) {
@@ -20,7 +20,7 @@ struct Node* createNode(int value) {
     return newNode;
 }
 
-// Insert at beginning
+
 void insertBegin(int value) {
     struct Node* newNode = createNode(value);
     if (head == NULL) {
@@ -36,7 +36,7 @@ void insertBegin(int value) {
     head = newNode;
 }
 
-// Insert at end
+
 void insertEnd(int value) {
     struct Node* newNode = createNode(value);
     if (head == NULL) {
@@ -51,7 +51,7 @@ void insertEnd(int value) {
     newNode->next = head;
 }
 
-// Insert by position
+
 void insertByPosition(int pos, int value) {
     struct Node* newNode = createNode(value);
     if (pos == 1) {
@@ -84,7 +84,7 @@ void insertByPosition(int pos, int value) {
     temp->next = newNode;
 }
 
-// Delete by value
+
 void deleteValue(int value) {
     if (head == NULL) {
         printf("List is empty!\n");
@@ -125,7 +125,7 @@ void deleteValue(int value) {
     free(temp);
 }
 
-// Delete by position
+
 void deleteByPosition(int pos) {
     if (head == NULL) {
         printf("List is empty!\n");
@@ -168,7 +168,7 @@ void deleteByPosition(int pos) {
     free(temp);
 }
 
-// Search
+
 void search(int value) {
     if (head == NULL) {
         printf("List is empty!\n");
@@ -188,7 +188,7 @@ void search(int value) {
     printf("Value %d not found!\n", value);
 }
 
-// Display list
+
 void display() {
     if (head == NULL) {
         printf("List is empty.\n");
@@ -203,7 +203,7 @@ void display() {
     printf("(back to head)\n");
 }
 
-// Free list
+
 void freeList() {
     if (head == NULL) return;
 

@@ -9,7 +9,7 @@ struct Node {
 
 struct Node* head = NULL;
 
-// Create node
+
 struct Node* createNode(int value) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     if (!newNode) {
@@ -22,7 +22,7 @@ struct Node* createNode(int value) {
     return newNode;
 }
 
-// Insert at beginning
+
 void insertBegin(int value) {
     struct Node* newNode = createNode(value);
     if (head == NULL) {
@@ -34,7 +34,7 @@ void insertBegin(int value) {
     head = newNode;
 }
 
-// Insert at end
+
 void insertEnd(int value) {
     struct Node* newNode = createNode(value);
     if (head == NULL) {
@@ -49,7 +49,7 @@ void insertEnd(int value) {
     newNode->prev = temp;
 }
 
-// Insert at position
+
 void insertByPosition(int pos, int value) {
     struct Node* newNode = createNode(value);
 
@@ -79,7 +79,7 @@ void insertByPosition(int pos, int value) {
     temp->next = newNode;
 }
 
-// Delete by value
+
 void deleteValue(int value) {
     struct Node* temp = head;
 
@@ -105,7 +105,7 @@ void deleteValue(int value) {
     free(temp);
 }
 
-// Delete by position
+
 void deleteByPosition(int pos) {
     if (head == NULL) {
         printf("List is empty!\n");
@@ -138,7 +138,7 @@ void deleteByPosition(int pos) {
     free(temp);
 }
 
-// Search
+
 void search(int value) {
     struct Node* temp = head;
     int pos = 1;
@@ -153,7 +153,7 @@ void search(int value) {
     printf("Value %d not found!\n", value);
 }
 
-// Display forward
+
 void display() {
     struct Node* temp = head;
     if (temp == NULL) {
@@ -168,7 +168,6 @@ void display() {
     printf("NULL\n");
 }
 
-// Display reverse (from tail to head)
 void displayReverse() {
     if (head == NULL) {
         printf("List is empty.\n");
@@ -186,29 +185,29 @@ void displayReverse() {
     printf("NULL\n");
 }
 
-// Reverse the DLL
+
 void reverseDLL() {
     struct Node* current = head;
     struct Node* temp = NULL;
 
     while (current != NULL) {
-        // Swap next and prev
+   
         temp = current->prev;
         current->prev = current->next;
         current->next = temp;
 
-        // Move to next (which is prev now)
+      
         current = current->prev;
     }
 
-    // Fix head
+   
     if (temp != NULL) {
         head = temp->prev;
     }
     printf("DLL reversed successfully!\n");
 }
 
-// Free all nodes
+
 void freeList() {
     struct Node* temp = head;
     while (temp != NULL) {

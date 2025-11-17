@@ -36,11 +36,11 @@ void initalise(struct array *arr)
 void display(struct array *arr)
 {
     if (arr->length == 0)
-    {~
+    {
         printf("The array is empty\n");
     }
     else
-    {
+    {0000
         for (int i = 0; i < arr->length; i++)
         {
             printf("The %dth element is %d\n", i + 1, arr->Address[i]);

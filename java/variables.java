@@ -1,7 +1,7 @@
 public class variables {
     public static void main(String args[]){
         int a =9;
-        // System.out.println(a*5);
+        System.out.println(a*5);
         // System.out.println(a*8);
         // int b =6;
         // int c = a+b;

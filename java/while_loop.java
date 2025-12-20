@@ -6,5 +6,6 @@ public class while_loop {
             System.out.println("hi" + (i + 1));
             i++;
         } while (i < 5);
+        
     }
 }

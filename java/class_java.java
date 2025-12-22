@@ -6,6 +6,7 @@
     }
     
 }
+
 public class class_java {
     
     public static void main(String[] args) {int num1 =2,num2 =4;

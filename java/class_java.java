@@ -15,3 +15,4 @@ public class class_java {
     System.out.println(result);}
     
 }
+    
